@@ -1,0 +1,30 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "basic boiler plate for typescript app",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p build nodemon",
+    "build": "tsc",
+    "nodemon": "nodemon build/index.js",
+    "test": "jest -c test/jest.js",
+    "coverage": "jest -c test/jest-coverage.js",
+    "lint": "tslint -c tslint.json --project tsconfig.json",
+    "check": "npm-check"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "npm-check": "^5.5.2",
+    "npm-run-all": "^4.1.2",
+    "ts-jest": "^21.2.3",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "debug": "^3.1.0"
+  }
+}
